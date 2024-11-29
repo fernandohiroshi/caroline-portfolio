@@ -1,14 +1,14 @@
-import s1 from '@/images/skills/adobe express logo.png'
-import s2 from '@/images/skills/canva logo.png'
-import s3 from '@/images/skills/capcut logo.png'
-import s4 from '@/images/skills/figma logo.png'
-import s5 from '@/images/skills/icone ferramentas.png'
-import s6 from '@/images/skills/illustrator logo.png'
-import s7 from '@/images/skills/photoshop logo.png'
-import s8 from '@/images/skills/premiere logo.png'
 import Image from 'next/image'
 
 import Box from '@/components/grid/Box'
+import s1 from '@/components/images/skills/adobe express logo.png'
+import s2 from '@/components/images/skills/canva logo.png'
+import s3 from '@/components/images/skills/capcut logo.png'
+import s4 from '@/components/images/skills/figma logo.png'
+import s5 from '@/components/images/skills/icone ferramentas.png'
+import s6 from '@/components/images/skills/illustrator logo.png'
+import s7 from '@/components/images/skills/photoshop logo.png'
+import s8 from '@/components/images/skills/premiere logo.png'
 
 export function Skills() {
   const skills = [s1, s2, s3, s4, s5, s6, s7, s8]

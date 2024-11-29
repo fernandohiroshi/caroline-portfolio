@@ -1,8 +1,9 @@
-import qrcode from '@/images/qrcode.jpeg'
 import Image from 'next/image'
 import { BiLogoGmail } from 'react-icons/bi'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { PiLinktreeLogo } from 'react-icons/pi'
+
+import qrcode from '@/components/images/qrcode.jpeg'
 
 interface ContactLinkProps {
   href: string
