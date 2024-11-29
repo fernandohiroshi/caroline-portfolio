@@ -1,4 +1,4 @@
-'use client' // Certifique-se de que o componente está marcado como um Client Component
+'use client'
 
 import Autoplay from 'embla-carousel-autoplay'
 import Image from 'next/image'
@@ -13,7 +13,6 @@ import {
   CarouselPrevious,
 } from '@/components/ui/shadcn/carousel'
 
-// Definindo o tipo da prop que CarouselPlugin vai receber
 interface CarouselPluginProps {
   fotografias: {
     name: string
@@ -22,7 +21,6 @@ interface CarouselPluginProps {
 }
 
 export default function Fotografia({ fotografias }: CarouselPluginProps) {
-  // Controlando o autoplay com hooks
   const [isHovered, setIsHovered] = React.useState(false)
 
   const plugin = React.useRef(
@@ -33,8 +31,8 @@ export default function Fotografia({ fotografias }: CarouselPluginProps) {
     <Carousel
       plugins={[plugin.current]}
       className="hidden w-full md:block"
-      onMouseEnter={() => setIsHovered(true)} // Evento de mouse
-      onMouseLeave={() => setIsHovered(false)} // Evento de mouse
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <CarouselContent>
         {fotografias.map((foto, index) => (
