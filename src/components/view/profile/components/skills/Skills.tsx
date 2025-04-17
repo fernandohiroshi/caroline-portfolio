@@ -16,13 +16,13 @@ export function Skills() {
   return (
     <Box className="col-span-5 flex border lg:col-span-4">
       <div className="flex h-full w-full items-center justify-center">
-        <div className="grid grid-cols-4 gap-2 md:gap-x-8">
+        <div className="grid grid-cols-4 gap-4 lg:gap-x-6">
           {skills.map((skill, index) => (
             <Image
               key={index}
               src={skill}
               alt={`Skill ${index + 1}`}
-              className="h-4 w-4 duration-300 ease-in-out hover:scale-110 md:h-6 md:w-6"
+              className="h-5 w-5 duration-300 ease-in-out hover:scale-110 md:h-6 md:w-6"
               quality={100}
             />
           ))}

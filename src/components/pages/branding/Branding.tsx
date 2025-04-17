@@ -3,6 +3,7 @@ import { BrandingProps } from '@/utils/types/branding.type'
 import Image from 'next/image'
 
 import Box from '@/components/grid/Box'
+import ImageWithSkeleton from '@/components/ImageWithSkeleton'
 
 type BrandingBoxProps = {
   imagens: Array<{
@@ -20,22 +21,20 @@ function BrandingBox({ imagens }: BrandingBoxProps) {
           key={index}
           className={`${image.className} rounded-xl p-0 shadow-xl`}
         >
-          <div className={`${image.height} overflow-hidden rounded-xl`}>
-            <Image
-              src={image.url}
-              width={300}
-              height={300}
-              quality={100}
-              alt={`Image ${index + 1}`}
-              className={`w-full object-cover ${image.height} rounded-xl object-center duration-300 ease-in-out hover:scale-110`}
-            />
-          </div>
+          <ImageWithSkeleton
+            src={image.url}
+            width={300}
+            height={300}
+            quality={100}
+            alt={`Image ${index + 1}`}
+            containerClassName={`${image.height} overflow-hidden rounded-xl`}
+            className={`w-full object-cover ${image.height} rounded-xl object-center duration-300 ease-in-out hover:scale-110`}
+          />
         </Box>
       ))}
     </div>
   )
 }
-
 export async function Branding() {
   const { object }: BrandingProps = await getDataBranding()
   const { branding_box_1, branding_box_2, branding_box_3, branding_box_4 } =

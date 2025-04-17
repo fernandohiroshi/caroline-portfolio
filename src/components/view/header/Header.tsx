@@ -14,7 +14,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-neutral-200/60 shadow backdrop-blur-3xl">
       {/* DESKTOP NAV */}
-      <nav className="mx-auto hidden max-w-5xl items-center justify-between py-8 lg:flex lg:px-4">
+      <nav className="mx-auto hidden max-w-5xl items-center justify-between py-8 md:px-8 lg:flex">
         {links.map(({ href, label }) => (
           <Link
             key={href}

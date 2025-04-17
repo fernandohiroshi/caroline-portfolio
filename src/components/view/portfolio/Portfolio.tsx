@@ -1,9 +1,9 @@
 import { getDataHome } from '@/utils/actions/get-data'
 import { HomeProps } from '@/utils/types/home.type'
-import Image from 'next/image'
 import Link from 'next/link'
 
 import Box from '@/components/grid/Box'
+import ImageWithSkeleton from '@/components/ImageWithSkeleton'
 
 interface PortfolioData {
   title: string
@@ -49,11 +49,11 @@ export async function Portfolio() {
           {portfoliosData.map((p, index) => (
             <Box
               key={index}
-              className="col-span-6 overflow-hidden p-4 shadow backdrop-blur-2xl duration-500 ease-in-out hover:bg-[#720429]/10 lg:col-span-6"
+              className="col-span-6 overflow-hidden p-2 shadow backdrop-blur-2xl duration-500 ease-in-out hover:bg-[#720429]/10 lg:col-span-6"
             >
               <Link href={p.pageUrl} title={p.title}>
                 <div className="overflow-hidden rounded-xl">
-                  <Image
+                  <ImageWithSkeleton
                     src={p.imageUrl}
                     alt={`Imagem representando o portfolio de ${p.title}`}
                     width={500}

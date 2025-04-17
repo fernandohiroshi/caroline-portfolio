@@ -3,13 +3,13 @@ async function fetchData(url: string) {
     const res = await fetch(url, { next: { revalidate: 120 } })
 
     if (!res.ok) {
-      throw new Error('Failed to fetch data')
+      throw new Error(`Failed to fetch data from ${url}`)
     }
 
     return res.json()
   } catch (err) {
-    console.error(err)
-    throw new Error('Failed to fetch data')
+    console.error('Error fetching data:', err)
+    throw new Error(`Failed to fetch data from ${url}`)
   }
 }
 

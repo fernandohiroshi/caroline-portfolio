@@ -1,6 +1,6 @@
 import { getDataSocialMedia } from '@/utils/actions/get-data'
 import { SocialProps } from '@/utils/types/social.type'
-import Image from 'next/image'
+import ImageWithSkeleton from '@/components/ImageWithSkeleton'
 
 export default async function SocialMedia() {
   const { object }: SocialProps = await getDataSocialMedia()
@@ -12,7 +12,7 @@ export default async function SocialMedia() {
         <div key={index}>
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <div className="flex-0">
-              <Image
+              <ImageWithSkeleton
                 src={socialBox.image_1.imgix_url}
                 alt={`Imagem 1 do box ${index + 1}`}
                 width={500}
@@ -22,7 +22,7 @@ export default async function SocialMedia() {
             </div>
 
             <div className="flex-0">
-              <Image
+              <ImageWithSkeleton
                 src={socialBox.image_2.imgix_url}
                 alt={`Imagem 2 do box ${index + 1}`}
                 width={500}
@@ -32,7 +32,7 @@ export default async function SocialMedia() {
             </div>
 
             <div className="flex-0">
-              <Image
+              <ImageWithSkeleton
                 src={socialBox.image_3.imgix_url}
                 alt={`Imagem 3 do box ${index + 1}`}
                 width={500}

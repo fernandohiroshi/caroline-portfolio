@@ -1,7 +1,6 @@
 'use client'
 
 import Autoplay from 'embla-carousel-autoplay'
-import Image from 'next/image'
 import * as React from 'react'
 
 import { Card, CardContent } from '@/components/ui/shadcn/card'
@@ -12,6 +11,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/shadcn/carousel'
+import ImageWithSkeleton from '@/components/ImageWithSkeleton'
 
 interface CarouselPluginProps {
   fotografias: {
@@ -40,7 +40,7 @@ export default function Fotografia({ fotografias }: CarouselPluginProps) {
             <div className="h-[35rem] p-1">
               <Card>
                 <CardContent className="flex items-center justify-center p-2">
-                  <Image
+                  <ImageWithSkeleton
                     src={foto.image.url}
                     alt={foto.name}
                     width={1000}
