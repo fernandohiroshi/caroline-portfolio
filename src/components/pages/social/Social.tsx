@@ -1,8 +1,7 @@
-import ImageWithSkeleton from '@/components/ImageWithSkeleton';
+import ImageWithSkeleton from '@/components/ImageWithSkeleton'
 
-import { getDataSocialMedia } from '@/utils/actions/get-data';
-import { SocialProps } from '@/utils/types/social.type';
-
+import { getDataSocialMedia } from '@/utils/actions/get-data'
+import { SocialProps } from '@/utils/types/social.type'
 
 export default async function SocialMedia() {
   const { object }: SocialProps = await getDataSocialMedia()

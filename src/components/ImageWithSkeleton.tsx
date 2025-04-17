@@ -33,7 +33,7 @@ export default function ImageWithSkeleton({
         className={`transition-opacity duration-500 ${
           isLoading ? 'opacity-0' : 'opacity-100'
         } ${className}`}
-        alt='Loading...'
+        alt="Loading..."
       />
     </div>
   )

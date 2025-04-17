@@ -1,12 +1,11 @@
 'use client'
 
-import { useRef } from 'react';
+import { useRef } from 'react'
 
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion'
 
-import { cn } from '@/lib/cn';
-import ImageWithSkeleton from '@/components/ImageWithSkeleton';
-
+import { cn } from '@/lib/cn'
+import ImageWithSkeleton from '@/components/ImageWithSkeleton'
 
 export const ParallaxScroll2 = ({
   images,

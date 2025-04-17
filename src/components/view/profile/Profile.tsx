@@ -1,11 +1,10 @@
-import ImageWithSkeleton from '@/components/ImageWithSkeleton';
+import ImageWithSkeleton from '@/components/ImageWithSkeleton'
 
-import Box from '@/components/grid/Box';
+import Box from '@/components/grid/Box'
 
-import { Experiences } from './components/experience/Experience';
-import Languages from './components/languages/Languages';
-import { Skills } from './components/skills/Skills';
-
+import { Experiences } from './components/experience/Experience'
+import Languages from './components/languages/Languages'
+import { Skills } from './components/skills/Skills'
 
 interface ProfileProps {
   titulo: string
