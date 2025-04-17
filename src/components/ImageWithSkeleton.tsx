@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react'
 import Image, { ImageProps } from 'next/image'
+import { useState } from 'react'
 
 type ImageWithSkeletonProps = ImageProps & {
   containerClassName?: string
@@ -33,6 +33,7 @@ export default function ImageWithSkeleton({
         className={`transition-opacity duration-500 ${
           isLoading ? 'opacity-0' : 'opacity-100'
         } ${className}`}
+        alt='Loading...'
       />
     </div>
   )

@@ -1,6 +1,5 @@
 import { getDataBranding } from '@/utils/actions/get-data'
 import { BrandingProps } from '@/utils/types/branding.type'
-import Image from 'next/image'
 
 import Box from '@/components/grid/Box'
 import ImageWithSkeleton from '@/components/ImageWithSkeleton'

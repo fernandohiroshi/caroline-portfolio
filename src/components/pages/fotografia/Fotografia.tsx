@@ -4,6 +4,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import * as React from 'react'
 
 import { Card, CardContent } from '@/components/ui/shadcn/card'
+import ImageWithSkeleton from '@/components/ImageWithSkeleton'
 import {
   Carousel,
   CarouselContent,
@@ -11,7 +12,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/shadcn/carousel'
-import ImageWithSkeleton from '@/components/ImageWithSkeleton'
 
 interface CarouselPluginProps {
   fotografias: {
