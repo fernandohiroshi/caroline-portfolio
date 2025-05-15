@@ -28,23 +28,27 @@ npm run dev
 ## Technologies
 
 ### Core
+
 - **[Next.js](https://nextjs.org)**: React framework for server-side rendering, performance optimization, and scalability.
 - **[Tailwind CSS](https://tailwindcss.com)**: Utility-first CSS framework for efficient styling.
 - **[TypeScript](https://www.typescriptlang.org)**: JavaScript superset with static typing for better code quality and maintainability.
 - **[Cosmic JS](https://cosmicjs.com)**: Headless CMS that provides an API for dynamic content management.
 
 ### UI and Animations
+
 - **[Framer Motion](https://www.framer.com/motion/)**: Library for animations and smooth transitions in React.
 - **[Embla Carousel](https://www.embla-carousel.com)**: Creation of interactive carousels with autoplay support.
 - **[Radix UI](https://www.radix-ui.com)**: Accessible and reusable components for complex UI elements.
 
 ### Icon Libraries
+
 - **[Lucide React](https://lucide.dev)**
 - **[React Icons](https://react-icons.github.io/react-icons/)**
 - **[@tabler/icons-react](https://github.com/tabler/tabler-icons)**
 - **[@radix-ui/react-icons](https://github.com/radix-ui/primitives/tree/main/packages/react-icons)**
 
 ### Utilities
+
 - **[clsx](https://github.com/lukeed/clsx)**: Efficient conditional concatenation of CSS classes.
 - **[Tailwind Merge](https://github.com/dcastil/tailwind-merge)**: Combines Tailwind CSS classes avoiding conflicts.
 - **[TailwindCSS Animate](https://github.com/aarongtaylor/tailwindcss-animate)**: Tailwind plugin for adding configurable CSS animations.

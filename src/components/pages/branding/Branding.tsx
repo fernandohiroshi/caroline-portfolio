@@ -27,7 +27,7 @@ function BrandingBox({ imagens }: BrandingBoxProps) {
             quality={100}
             alt={`Image ${index + 1}`}
             containerClassName={`${image.height} overflow-hidden rounded-xl`}
-            className={`w-full object-cover ${image.height} rounded-xl object-center duration-300 ease-in-out hover:scale-110`}
+            className={`w-full object-cover ${image.height} rounded-xl object-center`}
           />
         </Box>
       ))}

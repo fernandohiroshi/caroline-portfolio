@@ -49,17 +49,17 @@ export async function Portfolio() {
           {portfoliosData.map((p, index) => (
             <Box
               key={index}
-              className="col-span-6 overflow-hidden p-2 shadow backdrop-blur-2xl duration-500 ease-in-out hover:bg-[#720429]/10 lg:col-span-6"
+              className="col-span-6 overflow-hidden p-2 shadow backdrop-blur-2xl duration-300 ease-in-out hover:bg-[#720429]/10 lg:col-span-6"
             >
               <Link href={p.pageUrl} title={p.title}>
-                <div className="overflow-hidden rounded-xl">
+                <div className="overflow-hidden rounded-xl duration-300 hover:scale-95">
                   <ImageWithSkeleton
                     src={p.imageUrl}
                     alt={`Imagem representando o portfolio de ${p.title}`}
                     width={500}
                     height={500}
                     quality={100}
-                    className="max-h-[8rem] min-h-[8rem] w-full rounded-xl object-cover duration-500 ease-in-out hover:scale-110 md:max-h-[16rem] md:min-h-[16rem]"
+                    className="max-h-[8rem] min-h-[8rem] w-full rounded-xl object-cover md:max-h-[16rem] md:min-h-[16rem]"
                   />
                 </div>
 

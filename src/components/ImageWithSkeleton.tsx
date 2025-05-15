@@ -15,10 +15,9 @@ export default function ImageWithSkeleton({
   const [isLoading, setIsLoading] = useState(true)
 
   const handleImageLoad = () => {
-    // Simula atraso para visualização do skeleton
     setTimeout(() => {
       setIsLoading(false)
-    }, 1000) // 1 segundo de atraso
+    }, 1000)
   }
 
   return (
@@ -29,8 +28,8 @@ export default function ImageWithSkeleton({
 
       <Image
         {...props}
-        onLoad={handleImageLoad} // Usando o onLoad corretamente
-        className={`transition-opacity duration-500 ${
+        onLoad={handleImageLoad}
+        className={`transition-opacity duration-300 ${
           isLoading ? 'opacity-0' : 'opacity-100'
         } ${className}`}
         alt="Loading..."

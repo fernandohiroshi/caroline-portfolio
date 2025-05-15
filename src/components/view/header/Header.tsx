@@ -7,7 +7,7 @@ const links = [
   { href: '/#', label: 'Home' },
   { href: '/#perfil', label: 'Perfil' },
   { href: '/#portfolios', label: 'Portfolios' },
-  { href: '/#contato', label: 'Contato' },
+  { href: '#contato', label: 'Contato' },
 ]
 
 export function Header() {

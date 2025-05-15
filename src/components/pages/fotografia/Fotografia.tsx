@@ -3,8 +3,8 @@
 import Autoplay from 'embla-carousel-autoplay'
 import * as React from 'react'
 
-import { Card, CardContent } from '@/components/ui/shadcn/card'
 import ImageWithSkeleton from '@/components/ImageWithSkeleton'
+import { Card, CardContent } from '@/components/ui/shadcn/card'
 import {
   Carousel,
   CarouselContent,
@@ -24,7 +24,7 @@ export default function Fotografia({ fotografias }: CarouselPluginProps) {
   const [isHovered, setIsHovered] = React.useState(false)
 
   const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: !isHovered }),
+    Autoplay({ delay: 5000, stopOnInteraction: !isHovered }),
   )
 
   return (

@@ -78,7 +78,7 @@ export default function RootLayout({
         <Footer />
         <Link href="#" className="fixed bottom-3 right-3">
           <PiArrowCircleUpFill
-            size={30}
+            size={50}
             className="opacity-60 duration-300 ease-in-out hover:scale-110 hover:opacity-100"
           />
         </Link>
